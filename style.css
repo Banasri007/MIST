@@ -40,21 +40,22 @@ body {
   gap: 3rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch; /* Ensures equal height cards */
 }
 
 .image-card {
   background: #181818;
   border-radius: 16px;
   padding: 2rem 1rem 1rem 1rem;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
   width: 430px;
-  min-height: 385px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 400px; /* Uniform card height */
 }
 
-.card-img {
+.image-card img {
   width: 400px;
   height: 210px;
   object-fit: cover;
@@ -69,7 +70,7 @@ body {
   margin-top: auto;
 }
 
-/* Large button for page 3 */
+/* Large button for page with alert */
 .big-btn {
   background: #ff7300;
   color: #111;
@@ -82,22 +83,24 @@ body {
   cursor: pointer;
   transition: background 0.2s;
 }
+
 .big-btn:hover {
   background: #ff9800;
   color: #fff;
 }
-.btn-desc {
-  color: #fff;
-  text-align: center;
-  margin-top: 28px;
-  font-size: 1.13rem;
-}
 
-/* Paragraph content in page 2 */
+/* Paragraph content style */
 .text-content p {
   max-width: 600px;
   margin: 1rem auto;
   font-size: 1.2rem;
   line-height: 1.5;
   color: #eee;
+}
+
+.btn-desc {
+  color: #fff;
+  text-align: center;
+  margin-top: 28px;
+  font-size: 1.13rem;
 }
